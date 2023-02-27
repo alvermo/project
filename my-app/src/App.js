@@ -18,3 +18,14 @@ const deleteProduct = (productId) => {
     const newProducts = products.filter(product => product.id !== productId);
     setProducts (newProducts);
 }
+
+return (
+    <div className="App">
+      <Header/>
+      <ProductList products = {products} deleteProduct = {deleteProduct}/>
+
+    </div>
+  );
+}
+
+export default App;
